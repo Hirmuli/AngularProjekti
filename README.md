@@ -1,0 +1,4 @@
+AngularProjekti
+===============
+
+Ohjelmistotekniikantyö 1
