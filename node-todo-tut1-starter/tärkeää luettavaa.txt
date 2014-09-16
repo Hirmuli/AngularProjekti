@@ -1,0 +1,13 @@
+database.js vaihdettu db:hen localhost:8080
+
+nodejs serveri käynnistetään oikeasta kansiosta komennolla
+
+node server.js
+
+C:\Users\asentaja\Desktop\AngularProjekti-master\node-todo-tut1-starter\node server.js
+
+mongod käynnistetään:
+
+mongod
+
+C:\Program Files\MongoDB 2.6 Standard\bin\mongod
