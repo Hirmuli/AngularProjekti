@@ -1,4 +1,4 @@
-database.js vaihdettu db:hen localhost:8080
+﻿database.js vaihdettu db:hen localhost:8080
 
 nodejs serveri käynnistetään oikeasta kansiosta komennolla
 
@@ -11,3 +11,9 @@ mongod käynnistetään:
 mongod
 
 C:\Program Files\MongoDB 2.6 Standard\bin\mongod
+
+database osoite vaihdettu kansiossa:
+
+C:\Users\asentaja\Documents\GitHub\AngularProjekti\node-todo-tut1-starter\config
+
+database:'localhost:27017" <= nykyinen localhost ja portti jota kuunnellaan

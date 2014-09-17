@@ -16,7 +16,13 @@ function mainController($scope, $http) {
 	$scope.createTodo = function() {
 		$http.post('/api/todos', $scope.formData)
 			.success(function(data) {
-				$scope.formData = {}; // clear the form so our user is ready to enter another
+				$scope.formData = {}; // clear the form so our user is ready to enter another start location
+				$scope.todos = data;
+				console.log(data);
+			})
+				$http.post('/api/todos', $scope.formData2)
+			.success(function(data) {
+				$scope.formData2 = {}; // clear the form2 so our user is ready to enter another destination
 				$scope.todos = data;
 				console.log(data);
 			})
