@@ -51,20 +51,26 @@
 			<div class="col-sm-8 col-sm-offset-2 text-center">
 				<form>
 					<div class="form-group">
-
-						<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-						<!-- ALKUPERÄISET TEKSTI KENTÄT JOTKA "TOIMIVAT" -->
-						
+					<div style="float:left">
+					<select>
+					<div ng-repeat="todos.cities">
+					</select>
+					</div>
+					
+							<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+					<!--
 					<div style="float:left">
 						<input type="text" class="form-control input-lg text-center" placeholder="Lähtö paikkakunta" ng-model="formData.text">
 						</div>
-						<div style="float:right">
+						<div style="float:left">
 						<input type="text" class="form-control input-lg text-center" placeholder="Määränpää" ng-model="formData2.text">
+
 					</div>
+					-->
 					
 					
 					<!-- createToDo() WILL CREATE NEW TODOS -->
-					<div style="margin: 25px">
+					<div style="margin: 25px, float:right">
 					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Laske etäisyys</button>
 					</div>
 				</form>

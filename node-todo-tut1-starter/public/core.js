@@ -11,6 +11,8 @@ function mainController($scope, $http) {
 		.error(function(data) {
 			console.log('Error: ' + data);
 		});
+		
+		
 
 	// when submitting the add form, send the text to the node API
 	$scope.createTodo = function() {
@@ -23,6 +25,13 @@ function mainController($scope, $http) {
 				$http.post('/api/todos', $scope.formData2)
 			.success(function(data) {
 				$scope.formData2 = {}; // clear the form2 so our user is ready to enter another destination
+				$scope.todos = data;
+				console.log(data);
+			})
+			
+					$http.post('/api/todos', $scope.etaisyys)
+			.success(function(data) {
+				$scope.etaisyys = {}; // clear the etaisyys so our user is ready to enter another length
 				$scope.todos = data;
 				console.log(data);
 			})
