@@ -53,42 +53,15 @@
 					<div class="form-group">
 
 						<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-						<!-- dropdownmenu controller -->
-						<div ng-controller ="DropdownCtrl">
-						<span class="dropdown" on-toggle="toggled(open)">
-						<a href class="dropdown-toggle">
-						<!-- AD TEXT HERE IF YOU WANT TO -->
-						</a>
-							<ul class="dropdown-menu">
-								<li ng-repeat="choise in items">
-									<a href>{{choise}}</a>
-								</li>
-							</ul>
-						</span>
-						
-						<!-- OMIA MUUTOKSIA KESKEN !!!! -->
-						<!-- First dropdown menu items -->
-						<div class="btn-group" dropdown is-open="status.isopen">
-							<button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
-								Lähtöpaikkakunta <span class="caret"></span>
-							</button>
-						<ul class="dropdown-menu" role="menu">
-							<li ng-repeat="choice in items">
-								<a href="#">{{ choice}}</a>
-						</ul>
-						</div>
-						
-						<!-- MUUTOKSIA KESKEN LOPPUU -->
-						
 						<!-- ALKUPERÄISET TEKSTI KENTÄT JOTKA "TOIMIVAT" -->
-						<!--
+						
 					<div style="float:left">
 						<input type="text" class="form-control input-lg text-center" placeholder="Lähtö paikkakunta" ng-model="formData.text">
 						</div>
 						<div style="float:right">
 						<input type="text" class="form-control input-lg text-center" placeholder="Määränpää" ng-model="formData2.text">
 					</div>
-					-->
+					
 					
 					<!-- createToDo() WILL CREATE NEW TODOS -->
 					<div style="margin: 25px">
