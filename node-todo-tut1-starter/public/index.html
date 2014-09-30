@@ -29,20 +29,22 @@
 
 		<!-- HEADER AND TODO COUNT -->
 		<div class="jumbotron text-center">
-			<h1>Etäisyys<span class="label label-info">{{ citys }} km</span></h1>
+			<h1>Etäisyys<span class="label label-info">{{ citys.length }} km</span></h1>
 		</div>
 
 		<!-- TODO LIST -->
 		<div id="todo-list" class="row">
 			<div class="col-sm-4 col-sm-offset-4">
 
+	
 				<!-- LOOP OVER THE TODOS IN $scope.todos -->
+			<!--
 				<div class="checkbox" ng-repeat="todo in todos">
 					<label>
 						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
 					</label>
 				</div>
-
+			-->
 			</div>
 		</div>
 
@@ -51,7 +53,10 @@
 			<div class="col-sm-8 col-sm-offset-2 text-center">
 				<form>
 					<div class="form-group">
-					<div class="select" ng-repeat="data in citys"></div>
+					<select>
+					<div class="text" ng-repeat="kohteet in data"></div>
+					{{kohteet}}
+					</select>
 							<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
 					<!--
 					<div style="float:left">

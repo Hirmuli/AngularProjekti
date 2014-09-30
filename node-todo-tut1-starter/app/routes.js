@@ -1,10 +1,11 @@
 var Todo = require('./models/todo');
+var Dist = require ('./models/distance');
 
 module.exports = function(app) {
 
 	// api ---------------------------------------------------------------------
 	// get all todos
-	app.get('/api/todos', function(req, res) {
+	app.get('/api/citys', function(req, res) {
 
 		// use mongoose to get all todos in the database
 		Todo.find(function(err, todos) {
@@ -17,6 +18,8 @@ module.exports = function(app) {
 		});
 	});
 
+	app.get('/api/distances', function(req,res)
+	
 	// create todo and send back all todos after creation
 	app.post('/api/todos', function(req, res) {
 
