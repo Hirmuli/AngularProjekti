@@ -29,7 +29,7 @@
 
 		<!-- HEADER AND TODO COUNT -->
 		<div class="jumbotron text-center">
-			<h1>Etäisyys<span class="label label-info">{{ todos.length }} km</span></h1>
+			<h1>Etäisyys<span class="label label-info">{{ citys }} km</span></h1>
 		</div>
 
 		<!-- TODO LIST -->
@@ -51,12 +51,7 @@
 			<div class="col-sm-8 col-sm-offset-2 text-center">
 				<form>
 					<div class="form-group">
-					<div style="float:left">
-					<select>
-					<div ng-repeat="todos.cities">
-					</select>
-					</div>
-					
+					<div class="select" ng-repeat="data in citys"></div>
 							<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
 					<!--
 					<div style="float:left">
