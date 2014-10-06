@@ -1,5 +1,5 @@
 var Todo = require('./models/todo');
-var Dist = require ('./models/distance');
+var Dist = require('./models/distance');
 
 module.exports = function(app) {
 
@@ -18,7 +18,7 @@ module.exports = function(app) {
 		});
 	});
 
-	app.get('/api/distances', function(req,res)
+	app.get('/api/distances', function(req,res))
 	
 	// create todo and send back all todos after creation
 	app.post('/api/todos', function(req, res) {

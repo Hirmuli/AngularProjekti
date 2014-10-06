@@ -29,13 +29,13 @@
 
 		<!-- HEADER AND TODO COUNT -->
 		<div class="jumbotron text-center">
-			<h1>Etäisyys<span class="label label-info">{{ citys.length }} km</span></h1>
+			<h1>Etäisyys<span class="label label-info">{{ kohteet.length }} km</span></h1>
 		</div>
 
 		<!-- TODO LIST -->
 		<div id="todo-list" class="row">
 			<div class="col-sm-4 col-sm-offset-4">
-		
+
 				<!-- LOOP OVER THE TODOS IN $scope.todos -->
 				<div class="checkbox" ng-repeat="todo in todos">
 					<label>
@@ -49,10 +49,49 @@
 		<!-- FORM TO CREATE TODOS -->
 		<div id="todo-form" class="row">
 			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<form>
-				<div class="text" ng-repeat="a in citys"></div>
-					{{kohteet}}
+			<div style="float: left">
+				<form action ="">
+					<input type="radio" name="lahto" value="Helsinki">Helsinki<br>
+					<input type="radio" name="lahto" value="Kotka">Kotka<br>
+					<input type="radio" name="lahto" value="Lahti">Lahti<br>
+					<input type="radio" name="lahto" value="Hämeenlinna">Hämeenlinna<br>
+					<input type="radio" name="lahto" value="Salo">Salo<br>
+					<input type="radio" name="lahto" value="Tampere">Tampere<br>
+					<input type="radio" name="lahto" value="Pori">Pori<br>
+					<input type="radio" name="lahto" value="Rauma">Rauma<br>
+					<input type="radio" name="lahto" value="Jyväskylä">Jyväskylä<br>
+					<input type="radio" name="lahto" value="Seinäjoki">Seinäjoki<br>
+					<input type="radio" name="lahto" value="Oulu">Oulu<br>
+					<input type="radio" name="lahto" value="Kokkola">Kokkola<br>
+					<input type="radio" name="lahto" value="Kuopio">Kuopio<br>
+					<input type="radio" name="lahto" value="Kajaani">Kajaani<br>
+					<input type="radio" name="lahto" value="Rovaniemi">Rovaniemi<br>
+					<input type="radio" name="lahto" value="Kuusamo">Kuusamo<br>
+					<input type="radio" name="lahto" value="Mikkeli">Mikkeli<br>
+					<input type="radio" name="lahto" value="Ivalo">Ivalo<br>
+					</div>
 					
+							<div style="float: right">
+				<form action ="">
+					<input type="radio" name="kohde" value="Helsinki">Helsinki<br>
+					<input type="radio" name="kohde" value="Kotka">Kotka<br>
+					<input type="radio" name="kohde" value="Lahti">Lahti<br>
+					<input type="radio" name="kohde" value="Hämeenlinna">Hämeenlinna<br>
+					<input type="radio" name="kohde" value="Salo">Salo<br>
+					<input type="radio" name="kohde" value="Tampere">Tampere<br>
+					<input type="radio" name="kohde" value="Pori">Pori<br>
+					<input type="radio" name="kohde" value="Rauma">Rauma<br>
+					<input type="radio" name="kohde" value="Jyväskylä">Jyväskylä<br>
+					<input type="radio" name="kohde" value="Seinäjoki">Seinäjoki<br>
+					<input type="radio" name="kohde" value="Oulu">Oulu<br>
+					<input type="radio" name="kohde" value="Kokkola">Kokkola<br>
+					<input type="radio" name="kohde" value="Kuopio">Kuopio<br>
+					<input type="radio" name="kohde" value="Kajaani">Kajaani<br>
+					<input type="radio" name="kohde" value="Rovaniemi">Rovaniemi<br>
+					<input type="radio" name="kohde" value="Kuusamo">Kuusamo<br>
+					<input type="radio" name="kohde" value="Mikkeli">Mikkeli<br>
+					<input type="radio" name="kohde" value="Ivalo">Ivalo<br>
+					</div>
 							<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
 					<!--
 					<div style="float:left">
