@@ -29,7 +29,7 @@
 
 		<!-- HEADER AND TODO COUNT -->
 		<div class="jumbotron text-center">
-			<h1>Etäisyys<span class="label label-info">{{ kohteet.length }} km</span></h1>
+			<h1>I'm a Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
 		</div>
 
 		<!-- TODO LIST -->
@@ -49,67 +49,22 @@
 		<!-- FORM TO CREATE TODOS -->
 		<div id="todo-form" class="row">
 			<div class="col-sm-8 col-sm-offset-2 text-center">
-			<div style="float: left">
-				<form action ="">
-					<input type="radio" name="lahto" value="Helsinki">Helsinki<br>
-					<input type="radio" name="lahto" value="Kotka">Kotka<br>
-					<input type="radio" name="lahto" value="Lahti">Lahti<br>
-					<input type="radio" name="lahto" value="Hämeenlinna">Hämeenlinna<br>
-					<input type="radio" name="lahto" value="Salo">Salo<br>
-					<input type="radio" name="lahto" value="Tampere">Tampere<br>
-					<input type="radio" name="lahto" value="Pori">Pori<br>
-					<input type="radio" name="lahto" value="Rauma">Rauma<br>
-					<input type="radio" name="lahto" value="Jyväskylä">Jyväskylä<br>
-					<input type="radio" name="lahto" value="Seinäjoki">Seinäjoki<br>
-					<input type="radio" name="lahto" value="Oulu">Oulu<br>
-					<input type="radio" name="lahto" value="Kokkola">Kokkola<br>
-					<input type="radio" name="lahto" value="Kuopio">Kuopio<br>
-					<input type="radio" name="lahto" value="Kajaani">Kajaani<br>
-					<input type="radio" name="lahto" value="Rovaniemi">Rovaniemi<br>
-					<input type="radio" name="lahto" value="Kuusamo">Kuusamo<br>
-					<input type="radio" name="lahto" value="Mikkeli">Mikkeli<br>
-					<input type="radio" name="lahto" value="Ivalo">Ivalo<br>
-					</div>
-					
-							<div style="float: right">
-				<form action ="">
-					<input type="radio" name="kohde" value="Helsinki">Helsinki<br>
-					<input type="radio" name="kohde" value="Kotka">Kotka<br>
-					<input type="radio" name="kohde" value="Lahti">Lahti<br>
-					<input type="radio" name="kohde" value="Hämeenlinna">Hämeenlinna<br>
-					<input type="radio" name="kohde" value="Salo">Salo<br>
-					<input type="radio" name="kohde" value="Tampere">Tampere<br>
-					<input type="radio" name="kohde" value="Pori">Pori<br>
-					<input type="radio" name="kohde" value="Rauma">Rauma<br>
-					<input type="radio" name="kohde" value="Jyväskylä">Jyväskylä<br>
-					<input type="radio" name="kohde" value="Seinäjoki">Seinäjoki<br>
-					<input type="radio" name="kohde" value="Oulu">Oulu<br>
-					<input type="radio" name="kohde" value="Kokkola">Kokkola<br>
-					<input type="radio" name="kohde" value="Kuopio">Kuopio<br>
-					<input type="radio" name="kohde" value="Kajaani">Kajaani<br>
-					<input type="radio" name="kohde" value="Rovaniemi">Rovaniemi<br>
-					<input type="radio" name="kohde" value="Kuusamo">Kuusamo<br>
-					<input type="radio" name="kohde" value="Mikkeli">Mikkeli<br>
-					<input type="radio" name="kohde" value="Ivalo">Ivalo<br>
-					</div>
-							<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-					<!--
-					<div style="float:left">
-						<input type="text" class="form-control input-lg text-center" placeholder="Lähtö paikkakunta" ng-model="formData.text">
-						</div>
-						<div style="float:left">
-						<input type="text" class="form-control input-lg text-center" placeholder="Määränpää" ng-model="formData2.text">
+				<form>
+					<div class="form-group">
 
+						<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+						<input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
 					</div>
-					-->
-					
-					
+
 					<!-- createToDo() WILL CREATE NEW TODOS -->
-					<div style="margin: 25px, float:right">
-					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Laske etäisyys</button>
-					</div>
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
 				</form>
 			</div>
+		</div>
+
+		<div class="text-center text-muted">
+			<p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
+			<p>Read the <a href="http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular">tutorial</a>.</p>
 		</div>
 
 	</div>

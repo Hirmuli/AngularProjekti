@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('city', {
-	a : String,
-	dist : Number,
+module.exports = mongoose.model('Todo', {
+	text : String,
 	done : Boolean
 });
