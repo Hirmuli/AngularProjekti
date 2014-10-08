@@ -29,7 +29,7 @@
 
 		<!-- HEADER AND TODO COUNT -->
 		<div class="jumbotron text-center">
-			<h1>I'm a Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
+			<h1>Etäisyys välillä {{formData1.text}} {{formData2.text}} <span class="label label-info">{{  citys }} km</span></h1>
 		</div>
 
 		<!-- TODO LIST -->
@@ -37,10 +37,12 @@
 			<div class="col-sm-4 col-sm-offset-4">
 
 				<!-- LOOP OVER THE TODOS IN $scope.todos -->
-				<div class="checkbox" ng-repeat="todo in todos">
+				<div class="checkbox" ng-repeat="a in citys">
+					<!--
 					<label>
 						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
 					</label>
+					-->
 				</div>
 
 			</div>
@@ -53,19 +55,20 @@
 					<div class="form-group">
 
 						<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-						<input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
+						<div style="float: left">
+						<input type="text" class="form-control input-lg text-center" placeholder="Lähtö paikkakunta" ng-model="formData1.text">
+						</div>
+						<div style="float: right">
+						<input type="text" class="form-control input-lg text-center" placeholder="Kohde paikkakunta" ng-model="formData2.text">
+						</div>
 					</div>
 
 					<!-- createToDo() WILL CREATE NEW TODOS -->
-					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Laske etäisyys</button>
 				</form>
 			</div>
 		</div>
 
-		<div class="text-center text-muted">
-			<p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-			<p>Read the <a href="http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular">tutorial</a>.</p>
-		</div>
 
 	</div>
 
