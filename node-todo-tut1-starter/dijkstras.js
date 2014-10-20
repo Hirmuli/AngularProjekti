@@ -91,19 +91,24 @@ function Graph(){
   }
 }
 
-// nämä muualle
+// nämä kaikki tästä alta muualle
 var g = new Graph();
 
 // parser
-g.addVertex('A', {B: 7, C: 8});
-g.addVertex('B', {A: 7, F: 2});
-g.addVertex('C', {A: 8, F: 6, G: 4});
-g.addVertex('D', {F: 8});
-g.addVertex('E', {H: 1});
-g.addVertex('F', {B: 2, C: 6, D: 8, G: 9, H: 3});
-g.addVertex('G', {C: 4, F: 9});
-g.addVertex('H', {E: 1, F: 3});
+g.addVertex('Oulu',{Kajaani: 180, Kuopio:290, Vaasa: 320});
+g.addVertex('Kajaani',{Oulu: 180, Kuopio:170, Joensuu: 230});
+g.addVertex('Kuopio',{Vaasa: 380, Oulu: 290, Kajaani: 170, Joensuu: 130});
+g.addVertex('Joensuu',{Kajaani: 230, Kuopio: 130, Mikkeli: 210, Imatra: 200});
+g.addVertex('Vaasa',{Oulu: 320, Kuopio: 380, Tampere: 240});
+g.addVertex('Tampere',{Vaasa: 240, Turku: 150, Helsinki: 170});
+g.addVertex('Turku',{Tampere: 150, Helsinki: 160});
+g.addVertex('Helsinki',{Tampere: 170, Turku: 160, Mikkeli: 230, Imatra: 260});
+g.addVertex('Imatra',{Helsinki: 260, Mikkeli: 140, Joensuu: 200});
+g.addVertex('Mikkeli',{Kuopio: 160, Joensuu: 210, Imatra: 140, Helsinki: 230});
 
-// tästä saadaan kilometrit pihalle
-var distance;
-g.shortestPath('A', 'H').pop(distance);
+
+// alku ja loppu parametrit ja distance josta saadaan pihalle pituus
+var distance,
+	alku = 'Helsinki', 
+	loppu = 'Oulu';
+distance = g.shortestPath(alku, loppu).pop();
